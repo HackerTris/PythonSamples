@@ -1,3 +1,11 @@
-This repo contains a bunch of simple Python code snippets.  I created
+This repo contains a bunch of simple Python code samples.  I created
 it to practice interviewing questions, as well as to create some simple
 patterns that I can use for reference later.
+
+Most of the samples are taken from "Cracking the Coding Interview", by Gayle McDowell.  However, I created the coding samples in Python.  
+
+Each sample unit also contains its own unit tests.  
+
+As I mentioned above, these coding samples were useful for helping me to work out sample algorithms.  In addition, some of these samples will create useful patterns or references for later work.
+
+
