@@ -32,12 +32,34 @@ class Cat(LinkedListNode):
         if self.next is None:
             str = str + "." + " No animals entered shelter after this one. "
         else:
-            str=str + "." + " This animal entered the shelter before this one: " + self.prev.data
+            str = str + "." + " This animal entered the shelter before this one: " + self.next.data
 
         return str
 
+class Dog(LinkedListNode):
+
+    def __init__(self,name):
+        """ Initialize with dog's name. """
+        self.name=name
+        LinkedListNode.__init__(self,name)
+
+    def __repr__(self):
+
+        str="Dog's name: " + self.name
+        if self.next is None:
+            str = str + "." + " No animals entered the shelter after this one."
+        else:
+            str = str + "." + " This animal entered the shelter before this one: " + self.next.data
+            
 class Shelter(LinkedList):
 
     def __init__(self,animal=None):
-        pass
-    
+
+        LinkedList.__init__(self,animal)
+
+    def enqueue(self,animal):
+        """ add an animal to the shelter.
+
+        """
+        self.add_node(
+        

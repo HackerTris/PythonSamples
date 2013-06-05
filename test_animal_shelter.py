@@ -20,7 +20,10 @@ class AnimalShelterTest (unittest.TestCase):
 
         """
         cat=Cat('Muffin')
-        print(cat)
+        self.assertEqual(cat.name,'Muffin')
+        self.assertEqual(cat.data,'Muffin')
+        self.assertIsNone(cat.next)
+        
 
     def test_dog_create(self):
         """ Test creating a dog pet.
